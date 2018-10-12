@@ -1,0 +1,117 @@
+<html>
+<head>
+<title>Add User</title>
+
+<meta charset="utf-8">
+
+<style>
+
+body{
+background-color:#d7e1f2;
+}
+
+
+
+input[type=text], input[type=password] {
+    width: 40%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+
+.cancelbtn {
+    padding: 14px 20px;
+    background-color: red;
+}
+.subbtn{
+background-color:green;
+}
+
+.cancelbtn,.subbtn{
+    float: left;
+    width: 20%;
+}
+
+
+.container {
+    padding: 16px;
+}
+
+
+.clear::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+
+@media screen and (max-width: 300px) {
+    .cancelbtn, .signupbtn {
+        width: 100%;
+    }
+}
+
+
+
+
+
+
+</style>
+
+
+
+
+
+</head>
+
+<body >
+
+
+<h1  style="color:black;text-align:center;">Event Details</h1>
+<br /><br /><br />
+<form action="#" ">
+  <div class="container">
+  
+  <label><b>Event Name</b></label>
+    <input type="text" placeholder="Enter Event Name" name="eventname" required>
+  
+  <label><b>Event Date</b></label>
+    <input type="text" placeholder="Enter Event Date" name="eventdate" required>
+	
+	
+	
+    <label><b>Event Location</b></label>
+    <input type="text" placeholder="Enter User Name" name="eventlocation" required>
+
+    <label><b>SOA</b></label>
+    <input type="text" placeholder="Enter SOA" name="soa" required>
+
+    <label><b>Event Head</b></label>
+    <input type="text" placeholder="Ente Event Head" name="eventhead" required>
+   
+    
+
+    <div class="clear">
+      <a href="#"><button type="button"  class="cancelbtn">Cancel</button></a>
+      <button type="submit" class="subbtn" >Submit</button>
+    </div>
+  </div>
+</form>
+
+</body>
+
+</html>

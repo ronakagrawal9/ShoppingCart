@@ -1,0 +1,84 @@
+<html>
+<head>
+<title>Feedback</title>
+
+<style>
+body{
+background-color:#d7e1f2;
+}
+
+.content{
+
+margin:0 auto;
+
+}
+
+.button{
+
+position:fixed;
+top:85%;
+
+width:100px;
+height:50px;
+font-size:20px;
+color:white;
+broder:1px solid white;
+border-radius:20px;
+background-color:#042154;
+}
+
+
+
+</style>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+
+$(function(){
+("#header").load("home.jsp");
+
+
+});
+
+
+
+
+</script>
+
+
+
+
+</head>
+
+<body>
+<div id="header">
+
+</div>
+
+<h1 style="margin-top:30px;"> FEEDBACK </h1>
+<div class="content">
+
+<form action="#" method="GET">
+
+Event name: <br><br>
+<input type="text" name="name"><br>
+<br>
+
+Your email: <br><br>
+<input type="text" name="email"><br>
+<br>
+
+Your comments: <br><br>
+<textarea name="comments" rows="15" cols="50" style="resize:horizontal"></textarea><br><br>
+
+<input type="submit" value="Submit" class="button">
+ 
+</form>
+
+</div>
+
+
+
+</body>
+
+
+</html>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" id="WebApp_ID" version="3.1">
+  <display-name>ShoppingCart</display-name>
+  <servlet>
+    <servlet-name>Event</servlet-name>
+    <servlet-class>com.events.in.Event</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>AdminLogin</servlet-name>
+    <servlet-class>com.events.in.AdminLogin</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>DeleteUser</servlet-name>
+    <servlet-class>com.events.in.DeleteUser</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>display</servlet-name>
+    <servlet-class>com.events.in.display</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>display</servlet-name>
+    <url-pattern>/display</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>internet</servlet-name>
+    <servlet-class>com.events.in.internet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>electricity</servlet-name>
+    <servlet-class>com.events.in.electricity</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>water</servlet-name>
+    <servlet-class>com.events.in.water</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>Contact</servlet-name>
+    <servlet-class>com.events.in.Contact</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>Userlogin</servlet-name>
+    <servlet-class>com.events.in.Userlogin</servlet-class>
+  </servlet>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+  </welcome-file-list>
+</web-app>

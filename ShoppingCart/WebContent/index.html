@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Home</title>
+
+<style>
+
+html, body 
+{ 
+    height: 100%; 
+	width:100%;
+} 
+body {
+	background: #DFE96A;
+	//background:url('sea2.jpe') no-repeat center center fixed;
+	background-size:cover;
+	margin:48px 0px 0px 64px;
+	width:100%;
+	height:100vh;
+	
+}
+
+div#top {
+	position:fixed;
+	top:0px;
+	left:0px;
+	width:100%;
+	height:20%;
+	
+	background:#efaa09;/*#9999ff;#7bf7f7;#efaa09;*/
+	padding:8px;
+}
+
+#top img{
+  float: left;
+  width: 100px;
+  height: 100px;
+  background: #888;
+  overflow:hidden;
+}
+
+#top h1{
+position: relative;
+text-align:center;
+  top: 8px;
+  left: 10px;
+  font-size:50px;
+  margin-top:10px;
+  margin-bottom:40px;
+  padding:10px;
+  overflow:hidden;
+}
+
+.content{
+text-align:center;
+//background-image:url('sea.jpg') no-repeat;
+}
+
+.button{
+
+position:fixed;
+top:50%;
+left:10%;
+width:200px;
+height:50px;
+font-size:30px;
+color:white;
+broder:1px solid white;
+border-radius:20px;
+background-color:#0c1dd6;/*#cc5916;//#d8adbd;*/
+}
+
+.button1{
+
+
+top:50%
+/*left:50%;*/
+width:300px;
+margin-left:20px;
+height:50px;
+font-size:20px;
+color:white;
+broder:1px solid white;
+border-radius:20px;
+background-color:#000066;/*#0c1dd6;*/
+
+
+}
+
+h2{
+position:fixed;
+margin-bottom:700px;
+margin-left:250px;
+color:white;
+top:400px;
+font-family:Lucida Console;
+font-size:20px;
+left:10px;;
+width:100%;
+
+}
+/* home 
+#menu{
+width:1000px;
+margin-left:-100px;
+margin-right:-500px;
+
+}*/
+
+#nav{
+	background-color:#E99E6A;;/*#80dbf7;#edd290;*/
+	height:50px;
+	margin-top:145px;
+	margin-left:0px;
+		margin-right:0px;
+	//clear:both;
+	width:1800px;
+	
+}
+
+nav {
+	margin:0 auto;
+	overflow:hidden;
+	height:60px;
+	width:850px;
+	color:#E99E6A;
+	//display:table;
+	}
+
+nav  button{
+	
+	/*list-style-type:none;*/
+	width:250px;
+	float:left;
+	padding:0;
+	text-align:center;
+	
+}
+
+
+nav  button a{
+	
+	text-decoration:none;
+	color:#E99E6A;
+	line-height:60px;
+	display:block;
+	
+	text-align:center;
+	/*border-right:1px solid black;*/
+}
+
+ #contact{
+text-decoration:none;
+	color:white;
+	line-height:60px;
+	display:block;
+	text-align:center;
+}
+
+
+#slideshow { 
+    margin: 50px auto; 
+    position: relative; 
+    width: 240px; 
+    height: 240px; 
+    padding: 10px; 
+    box-shadow: 0 0 20px rgba(0,0,0,0.4); 
+}
+
+#slideshow > div { 
+    position: absolute; 
+    top: 10px; 
+    left: 10px; 
+    right: 10px; 
+    bottom: 10px; 
+}
+
+@keyframes slidy {
+0% { left: 0%; }
+20% { left: 0%; }
+25% { left: -100%; }
+45% { left: -100%; }
+50% { left: -200%; }
+70% { left: -200%; }
+75% { left: -300%; }
+95% { left: -300%; }
+100% { left: -400%; }
+}
+
+body { margin: 0; 
+} 
+div#slider { 
+overflow: hidden; 
+}
+div#slider figure img { width: 20%;
+ float: left; 
+ }
+div#slider figure { 
+  position: relative;
+  width: 500%;
+  margin: 0;
+  left: 0;
+  text-align: left;
+  font-size: 0;
+  animation: 15s slidy infinite; 
+}
+
+	
+</style>
+</head>
+<body>
+<div id="top">
+
+<!-- <img src="vv.png" /> -->
+<h1 style="color:black;text-align:center;font-family:Algerian;" >Shopping Mall Management System</h1>
+
+
+</div>
+
+<nav id="nav">
+
+
+
+<!--<li><a href="home.html">HOME</a></li>
+<li><a href="aboutv.html">ABOUT</a></li>
+<li><a href="signup.html">MEMBERSHIP</a></li>
+<li><a href="events.html">EVENTS</a></li>
+<li><a href="#" style="border-right:0px;">CONTACT</a></li> -->
+
+<a href="#"><button class="button1" style="margin-left:150px;">HOME</button></a>
+<a href="about.html"><button class="button1">ABOUT US</button></a>
+<a href="userAdmin.html"><button class="button1">LOGIN</button></a>
+<a href="stockcontact.html" style="border-right:0px;"><button class="button1">CONTACT</button></a>
+
+
+</nav>
+
+<div id="slider" style="margin:0px auto;width:1200px;">
+<figure>
+
+<img src="images/event1.jpg" style="height:450px;" alt>
+<img src="images/event2.jpg" style="height:450px;" alt>
+<img src="images/event3.jpg" style="height:450px;" alt>
+
+<img src="images/soft3.jpg" style="height:450px;" alt>
+
+<img src="images/soft4.jpeg" style="height:450px;" alt>
+
+</figure>
+</div>
+
+<div>
+<h2>
+
+
+
+</h2>
+
+</div>
+
+
+</body>
+</html>
+

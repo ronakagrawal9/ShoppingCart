@@ -1,0 +1,128 @@
+<html>
+<head>
+<title>Add User</title>
+
+<meta charset="utf-8">
+
+<style>
+
+body{
+background-color:#d7e1f2;
+}
+
+
+
+input[type=text], input[type=password] {
+    width: 40%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+
+.cancelbtn {
+    padding: 14px 20px;
+    background-color: red;
+}
+.subbtn{
+background-color:green;
+}
+
+.cancelbtn,.subbtn{
+    /* float: left; */
+    width: 20%;
+}
+
+
+.container {
+    padding: 16px;
+}
+
+
+.clear::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+
+@media screen and (max-width: 300px) {
+    .cancelbtn, .signupbtn {
+        width: 100%;
+    }
+}
+
+
+
+
+
+
+</style>
+
+<script type="text/javascript">
+    function Validate() {
+	
+        var password = document.getElementById("psw").value;
+        var confirmPassword = document.getElementById("psw-repeat").value;
+        if (password != confirmPassword) {
+            alert("Passwords do not match.");
+            return false;
+        }
+        return true;
+    }
+</script>
+
+
+
+</head>
+
+<body style="background-color:#F6E6FA">
+
+
+<h1  style="color:black;text-align:center;">Add User</h1>
+<br /><br /><br />
+<form action="AddUser" method="get" OnSubmit="return Validate();">
+  <div class="container" align="center">
+  
+  <label><b>Full Name</b></label>
+    <input type="text" placeholder="Enter Full Name" name="fullname" required>
+  
+  <label><b>Phone Number</b></label>
+    <input type="text" placeholder="Enter Phone Number" name="phone" required>
+	
+	
+	
+    <label><b>User Name</b></label>
+    <input type="text" placeholder="Enter User Name" name="user" required>
+
+    <label><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" required>
+
+    <label><b>Confirm Password</b></label>
+    <input type="password" placeholder="Confirm Password" name="psw-repeat" required>
+   
+    
+
+    <div class="clear" align="center">
+      <a href="#"><button type="button"  class="cancelbtn">Cancel</button></a>
+      <button type="submit" class="subbtn" >Submit</button>
+    </div>
+  </div>
+</form>
+
+</body>
+
+</html>
